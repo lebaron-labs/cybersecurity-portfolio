@@ -1,0 +1,4 @@
+index=* source="WinEventLog:Security" EventCode=4625 Logon_Type=3
+| bin _time span=5m
+| stats count AS failed_attempts values(Account_Name) AS targeted_accounts values(Failure_Reason) AS failure_reasons BY _time Source_Network_Address
+| where failed_attempts >= 5
