@@ -2,6 +2,6 @@
 
 layout1 - pi , mini pc and router
 
-layout2 - desk
+layout2 - desk and laptop
 
-layout3 - workstation and laptop
+layout3 - workstation 
